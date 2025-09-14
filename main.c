@@ -10,14 +10,6 @@ float divide(int a, int b) {
     return (float)a / b ;
 }
 
-int main() {
-    int num1 = 10, num2 = 5;
-    float result;
-    result = divide(num1, num2);
-    printf("Result: %.2f\n", result);
-    return 0;
-}
-
 
 int subtract(int a, int b) {
     return a - b;
@@ -27,13 +19,21 @@ int main() {
     int x, y;
     printf("Enter two numbers: ");
     scanf("%d %d", &x, &y);
-
-    printf("Result of subtraction: %d\n", subtract(x, y));
-    return 0;
+	char opcode;
+	printf("please enter the opcode: ");
+	scanf("%c",&opcode);
+	float res=0;
+	switch(char){
+		case '+': res=add(x,y);
+		case '-': res=subtract(x,y);
+		case '/': res=divide(x,y);
+		default:res=0.0;  
+	}
+	printf("Result:%.2f ",res);
 }
 
-float add (float x, float y){
-	float sum =x+y;
+int add (int x, int y){
+	int sum =x+y;
 	return sum;
 }
 
