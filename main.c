@@ -13,3 +13,8 @@ int main() {
     printf("Result of subtraction: %d\n", subtract(x, y));
     return 0;
 }
+
+float add (float x, float y){
+	float sum =x+y;
+	return sum;
+}
