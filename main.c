@@ -1,8 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "header.h"
 
-int main()
-{
-    printf("Hello world!\n");
+int subtract(int a, int b) {
+    return a - b;
+}
+
+int main() {
+    int x, y;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    printf("Result of subtraction: %d\n", subtract(x, y));
     return 0;
 }
