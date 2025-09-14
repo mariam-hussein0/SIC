@@ -1,7 +1,12 @@
 #ifndef PROJECT_H_INCLUDED
 #define PROJECT_H_INCLUDED
+float add (float x, float y);
+
 
 float divide(int a, int b);
+=======
+int subtract(int a, int b);
+
 
 
 #endif // PROJECT_H_INCLUDED
